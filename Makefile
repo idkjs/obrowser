@@ -21,8 +21,8 @@ OCAMLFIND = ocamlfind
 all: .check_version rt/caml/stdlib.cma vm.js tuto $(EXAMPLES_TARGETS) examples.html AXO lwt
 
 .check_version:
-	@[ "$(shell ocamlc -vnum)" = "3.12.0" ] || \
-	  [ "$(shell ocamlc -vnum)" = "3.12.1" ] || \
+	@[ "$(shell ocamlc -vnum)" = "4.12.0" ] || \
+	  [ "$(shell ocamlc -vnum)" = "4.13.0" ] || \
 	  ( echo "You need ocaml version 3.12.0 or 3.12.1"; \
             exit 1 )
 	touch $@
